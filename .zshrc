@@ -9,6 +9,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # Set name of the theme to load.
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# Download plugins.
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 # Which plugins to load.
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
