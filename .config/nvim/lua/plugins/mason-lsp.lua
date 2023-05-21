@@ -1,4 +1,4 @@
-local on_attach = function(_, bufnr)
+ on_attach = function(_, bufnr)
   local nmap = function(keys, func, desc)
     if desc then
       desc = 'LSP: ' .. desc
@@ -35,7 +35,7 @@ end
 -- Enable the following language servers
 local servers = {
   rust_analyzer = {},
-  sumneko_lua = {
+  lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
       telemetry = { enable = false },
