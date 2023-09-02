@@ -49,6 +49,13 @@ require('packer').startup(function(use)
     after = 'nvim-treesitter',
   }
 
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
+
   -- Git related plugins
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
